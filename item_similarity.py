@@ -33,7 +33,7 @@ f1_scores_matrix: List[float] = []
 # -------------------- #
 DATASET_FILENAME = 'ratings_100users.csv'
 NO_OF_HASH_FUNCTIONS = 40
-NO_OF_CONSIDERED_MOVIES = 100
+NO_OF_CONSIDERED_MOVIES = 20
 ACCEPTANCE_LEVEL = 0.25
 
 # Min Hashing #
@@ -232,7 +232,7 @@ def calculate_pairwise_sig_sim(dataset_indices, baseline_j_sim, signature_matrix
     for i in range(0, len(dataset_indices)):
         for j in range(i + 1, len(dataset_indices)):
             sig_sim = signature_similarity(dataset_indices[i], dataset_indices[j], signature_matrix, n_value)
-            if baseline_j_sim[(dataset_indices[i], dataset_indices[j])] >= 0.5:
+            if baseline_j_sim[(dataset_indices[i], dataset_indices[j])] >= ACCEPTANCE_LEVEL:
                 if sig_sim >= ACCEPTANCE_LEVEL:
                     true_positives += 1
                 else:
