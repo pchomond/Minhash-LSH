@@ -49,7 +49,7 @@ Testing values should be set as:
 4. **n_values**= [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100]  
 Resulting plot example:  
 
-![alt text](https://github.com/paschalishom/Minhash-LSH/blob/master/images/ratings_100users_minhash_100considered.png "ratings.csv minhash")
+![alt text](https://github.com/paschalishom/Minhash-LSH/blob/master/images/ratings_minhash_100considered_100hf.png "ratings.csv minhash")
 
 ### LSH
 #### With *ratings_100users.csv*
