@@ -3,7 +3,7 @@ Implementation of Minhash and Locality Sensitive Hashing algorithms.
 
 This project was part of the course 'Algorithms for Big Data' MYE047 for the spring semester of 2020.
 It was developed in Python 3.8.2 and requires only matplotlib to be able to print all the statistical plots. 
-The two files, *ratings.csv*  and *ratings_100users.csv*, were used as testing. 
+The files *ratings.csv*  and *ratings_100users.csv* were used for testing the code's functionality. 
 The script will accept any other file in the same format as the two files mentioned.
 
 ## Execution
